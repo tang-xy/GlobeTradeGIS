@@ -16,7 +16,7 @@ namespace GlobeTradeGIS
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Dark Style");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new FormMap());
         }
     }
 }
