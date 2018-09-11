@@ -28,7 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormMap
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.ClientSize = new System.Drawing.Size(1272, 456);
+            this.Location = new System.Drawing.Point(0, 0);
+            this.Name = "FormMap";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
