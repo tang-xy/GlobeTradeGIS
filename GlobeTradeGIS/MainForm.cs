@@ -107,7 +107,7 @@ namespace GlobeTradeGIS
             windowsUIButtonPanel.Buttons[2].Properties.Appearance.ForeColor = Color.Black;
         }
 
-        private void dock()
+        public void dockShow()
         {
             this.dockpanel = new DockPanel();
             this.dockManager.AddPanel(new DockingStyle(), dockpanel);
@@ -117,14 +117,12 @@ namespace GlobeTradeGIS
             dockpanel.OriginalSize = new System.Drawing.Size(200, 200);
             dockpanel.Size = new System.Drawing.Size((int)(this.ClientSize.Width / 2), (int)(this.ClientSize.Height * 0.4));
             dockpanel.Text = "dockPane";
-            dockpanel.Size = new System.Drawing.Size(0,0);
-            dockpanel.FloatSize = new System.Drawing.Size(0, 0);
-            dockManager.Clear();
-            this.dockpanel = new DockPanel();
-            this.dockManager.AddPanel(new DockingStyle(), dockpanel);
 
         }
-
+        public void dockClear()
+        {
+            dockManager.Clear();
+        }
         private void windowsUIButtonPanel1_ButtonClicked(object sender, DevExpress.XtraBars.Docking2010.ButtonEventArgs e)
         {
 

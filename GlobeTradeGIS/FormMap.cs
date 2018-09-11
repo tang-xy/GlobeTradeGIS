@@ -16,5 +16,14 @@ namespace GlobeTradeGIS
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dockShow();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dockClear();
+        }
     }
 }
