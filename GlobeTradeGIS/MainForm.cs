@@ -9,7 +9,7 @@ namespace GlobeTradeGIS
 {
     public partial class MainForm : System.Windows.Forms.Form
     {
-
+        public DockPanel dockpanel;
         public MainForm()
         {
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
@@ -109,7 +109,7 @@ namespace GlobeTradeGIS
 
         private void dock()
         {
-            DockPanel dockpanel = new DockPanel();
+            this.dockpanel = new DockPanel();
             this.dockManager.AddPanel(new DockingStyle(), dockpanel);
             dockpanel.Dock = DockingStyle.Float;
             dockpanel.FloatLocation = new System.Drawing.Point((int)(this.ClientSize.Width/2)-25 , (int)(this.ClientSize.Height*0.6));
@@ -117,6 +117,12 @@ namespace GlobeTradeGIS
             dockpanel.OriginalSize = new System.Drawing.Size(200, 200);
             dockpanel.Size = new System.Drawing.Size((int)(this.ClientSize.Width / 2), (int)(this.ClientSize.Height * 0.4));
             dockpanel.Text = "dockPane";
+            dockpanel.Size = new System.Drawing.Size(0,0);
+            dockpanel.FloatSize = new System.Drawing.Size(0, 0);
+            dockManager.Clear();
+            this.dockpanel = new DockPanel();
+            this.dockManager.AddPanel(new DockingStyle(), dockpanel);
+
         }
 
         private void windowsUIButtonPanel1_ButtonClicked(object sender, DevExpress.XtraBars.Docking2010.ButtonEventArgs e)

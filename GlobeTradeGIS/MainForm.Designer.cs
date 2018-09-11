@@ -58,7 +58,7 @@
             this.windowsUIButtonPanel.Location = new System.Drawing.Point(0, 0);
             this.windowsUIButtonPanel.Margin = new System.Windows.Forms.Padding(0);
             this.windowsUIButtonPanel.Name = "windowsUIButtonPanel";
-            this.windowsUIButtonPanel.Size = new System.Drawing.Size(1454, 67);
+            this.windowsUIButtonPanel.Size = new System.Drawing.Size(1090, 54);
             this.windowsUIButtonPanel.TabIndex = 6;
             this.windowsUIButtonPanel.Text = "windowsUIButtonPanel1";
             this.windowsUIButtonPanel.ButtonClick += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.windowsUIButtonPanel1_ButtonClick);
@@ -68,7 +68,7 @@
             // 
             this.axLicenseControl.Enabled = true;
             this.axLicenseControl.Location = new System.Drawing.Point(0, 0);
-            this.axLicenseControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.axLicenseControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.axLicenseControl.Name = "axLicenseControl";
             this.axLicenseControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl.OcxState")));
             this.axLicenseControl.Size = new System.Drawing.Size(32, 32);
@@ -81,7 +81,7 @@
             this.axMapControl.Margin = new System.Windows.Forms.Padding(0);
             this.axMapControl.Name = "axMapControl";
             this.axMapControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl.OcxState")));
-            this.axMapControl.Size = new System.Drawing.Size(1454, 488);
+            this.axMapControl.Size = new System.Drawing.Size(1040, 390);
             this.axMapControl.TabIndex = 8;
             this.axMapControl.OnMouseMove += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseMoveEventHandler(this.axMapControl1_OnMouseMove);
             // 
@@ -111,13 +111,14 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1454, 488);
+            this.ClientSize = new System.Drawing.Size(1040, 390);
             this.Controls.Add(this.windowsUIButtonPanel);
             this.Controls.Add(this.axMapControl);
             this.Controls.Add(this.axLicenseControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

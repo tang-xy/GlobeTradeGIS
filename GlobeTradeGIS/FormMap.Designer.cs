@@ -28,33 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // chartControl1
-            // 
-            this.chartControl1.Location = new System.Drawing.Point(330, 172);
-            this.chartControl1.Name = "chartControl1";
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.Size = new System.Drawing.Size(300, 200);
-            this.chartControl1.TabIndex = 9;
             // 
             // FormMap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.ClientSize = new System.Drawing.Size(1272, 456);
-            this.Controls.Add(this.chartControl1);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "FormMap";
-            this.Controls.SetChildIndex(this.chartControl1, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.XtraCharts.ChartControl chartControl1;
     }
 }
