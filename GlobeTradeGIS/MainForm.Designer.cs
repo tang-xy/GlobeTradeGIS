@@ -35,8 +35,10 @@
             this.axMapControl = new ESRI.ArcGIS.Controls.AxMapControl();
             this.timer_UI_in = new System.Windows.Forms.Timer(this.components);
             this.timer_UI_out = new System.Windows.Forms.Timer(this.components);
+            this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.SuspendLayout();
             // 
             // windowsUIButtonPanel
@@ -56,7 +58,7 @@
             this.windowsUIButtonPanel.Location = new System.Drawing.Point(0, 0);
             this.windowsUIButtonPanel.Margin = new System.Windows.Forms.Padding(0);
             this.windowsUIButtonPanel.Name = "windowsUIButtonPanel";
-            this.windowsUIButtonPanel.Size = new System.Drawing.Size(1454, 80);
+            this.windowsUIButtonPanel.Size = new System.Drawing.Size(1454, 67);
             this.windowsUIButtonPanel.TabIndex = 6;
             this.windowsUIButtonPanel.Text = "windowsUIButtonPanel1";
             this.windowsUIButtonPanel.ButtonClick += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.windowsUIButtonPanel1_ButtonClick);
@@ -66,6 +68,7 @@
             // 
             this.axLicenseControl.Enabled = true;
             this.axLicenseControl.Location = new System.Drawing.Point(0, 0);
+            this.axLicenseControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.axLicenseControl.Name = "axLicenseControl";
             this.axLicenseControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl.OcxState")));
             this.axLicenseControl.Size = new System.Drawing.Size(32, 32);
@@ -78,7 +81,7 @@
             this.axMapControl.Margin = new System.Windows.Forms.Padding(0);
             this.axMapControl.Name = "axMapControl";
             this.axMapControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl.OcxState")));
-            this.axMapControl.Size = new System.Drawing.Size(1454, 586);
+            this.axMapControl.Size = new System.Drawing.Size(1454, 488);
             this.axMapControl.TabIndex = 8;
             this.axMapControl.OnMouseMove += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseMoveEventHandler(this.axMapControl1_OnMouseMove);
             // 
@@ -90,22 +93,38 @@
             // 
             this.timer_UI_out.Tick += new System.EventHandler(this.timer_UI_out_Tick);
             // 
+            // dockManager
+            // 
+            this.dockManager.DockingOptions.DockPanelInCaptionRegion = DevExpress.Utils.DefaultBoolean.True;
+            this.dockManager.DockingOptions.ShowCloseButton = false;
+            this.dockManager.Form = this;
+            this.dockManager.TopZIndexControls.AddRange(new string[] {
+            "DevExpress.XtraBars.BarDockControl",
+            "DevExpress.XtraBars.StandaloneBarDockControl",
+            "System.Windows.Forms.StatusBar",
+            "System.Windows.Forms.MenuStrip",
+            "System.Windows.Forms.StatusStrip",
+            "DevExpress.XtraBars.Ribbon.RibbonStatusBar",
+            "DevExpress.XtraBars.Ribbon.RibbonControl",
+            "DevExpress.XtraBars.Navigation.OfficeNavigationBar",
+            "DevExpress.XtraBars.Navigation.TileNavPane"});
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1454, 586);
+            this.ClientSize = new System.Drawing.Size(1454, 488);
             this.Controls.Add(this.windowsUIButtonPanel);
             this.Controls.Add(this.axMapControl);
             this.Controls.Add(this.axLicenseControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,5 +135,6 @@
         private ESRI.ArcGIS.Controls.AxMapControl axMapControl;
         private System.Windows.Forms.Timer timer_UI_in;
         private System.Windows.Forms.Timer timer_UI_out;
+        private DevExpress.XtraBars.Docking.DockManager dockManager;
     }
 }

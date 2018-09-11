@@ -3,17 +3,22 @@ using DevExpress.XtraEditors;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using DevExpress.XtraBars.Docking;
 
 namespace GlobeTradeGIS
 {
-    public partial class MainForm : XtraForm
+    public partial class MainForm : System.Windows.Forms.Form
     {
+
         public MainForm()
         {
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
             InitializeComponent();
             //重新初始化windowsUIButtonpanel
             this.windowsUIButtonPanel.Size = new System.Drawing.Size(this.ClientSize.Width, this.windowsUIButtonPanel.Height);
+            //创建浮动窗口
+            //dock();
+            //
         }
         //DevExpress.XtraBars.Docking2010.ButtonEventArgs button2;
         private void windowsUIButtonPanel1_ButtonClick(object sender, DevExpress.XtraBars.Docking2010.ButtonEventArgs e)
@@ -102,6 +107,18 @@ namespace GlobeTradeGIS
             windowsUIButtonPanel.Buttons[2].Properties.Appearance.ForeColor = Color.Black;
         }
 
+        private void dock()
+        {
+            DockPanel dockpanel = new DockPanel();
+            this.dockManager.AddPanel(new DockingStyle(), dockpanel);
+            dockpanel.Dock = DockingStyle.Float;
+            dockpanel.FloatLocation = new System.Drawing.Point((int)(this.ClientSize.Width/2)-25 , (int)(this.ClientSize.Height*0.6));
+            dockpanel.FloatSize = new System.Drawing.Size((int)(this.ClientSize.Width / 2), (int)(this.ClientSize.Height * 0.4));
+            dockpanel.OriginalSize = new System.Drawing.Size(200, 200);
+            dockpanel.Size = new System.Drawing.Size((int)(this.ClientSize.Width / 2), (int)(this.ClientSize.Height * 0.4));
+            dockpanel.Text = "dockPane";
+        }
+
         private void windowsUIButtonPanel1_ButtonClicked(object sender, DevExpress.XtraBars.Docking2010.ButtonEventArgs e)
         {
 
@@ -122,5 +139,9 @@ namespace GlobeTradeGIS
 
         }
 
+        private void dockPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
