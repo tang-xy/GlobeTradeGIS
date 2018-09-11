@@ -117,8 +117,6 @@ namespace GlobeTradeGIS
             dockpanel.OriginalSize = new System.Drawing.Size(200, 200);
             dockpanel.Size = new System.Drawing.Size((int)(this.ClientSize.Width / 2), (int)(this.ClientSize.Height * 0.4));
             dockpanel.Text = "dockPane";
-            dockpanel.Size = new System.Drawing.Size(0,0);
-            dockpanel.FloatSize = new System.Drawing.Size(0, 0);
 
         }
         public void dockClear()

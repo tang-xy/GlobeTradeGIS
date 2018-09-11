@@ -29,14 +29,8 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // dockpanel
-            // 
-            this.dockpanel.FloatLocation = new System.Drawing.Point(918, 218);
-            this.dockpanel.FloatSize = new System.Drawing.Size(163, 93);
-            this.dockpanel.Size = new System.Drawing.Size(163, 93);
-            this.dockpanel.Click += new System.EventHandler(this.dockpanel_Click);
             // 
             // button1
             // 
@@ -48,14 +42,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(442, 302);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormMap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.ClientSize = new System.Drawing.Size(1272, 456);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "FormMap";
             this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
             this.ResumeLayout(false);
 
         }
@@ -63,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
