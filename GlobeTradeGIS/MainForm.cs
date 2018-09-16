@@ -10,6 +10,9 @@ namespace GlobeTradeGIS
     public partial class MainForm : System.Windows.Forms.Form
     {
         public DockPanel dockpanel;
+        public Label labelloading;
+        public static MainForm instance;
+
         public MainForm()
         {
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
@@ -72,9 +75,9 @@ namespace GlobeTradeGIS
         }
         private void axMapControl1_OnMouseMove(object sender, ESRI.ArcGIS.Controls.IMapControlEvents2_OnMouseMoveEvent e)
         {
-            if (e.y <= 200 && this.windowsUIButtonPanel.Location.Y <= 0)
+            if (e.y <= (0.2*this.ClientSize.Height) && this.windowsUIButtonPanel.Location.Y <= 0)
                 UIin();
-            else if (e.y >= 400 && this.windowsUIButtonPanel.Location.Y >= 0)
+            else if (e.y >= (0.4 * this.ClientSize.Height) && this.windowsUIButtonPanel.Location.Y >= 0)
                 UIout();
         }
         //
@@ -116,7 +119,20 @@ namespace GlobeTradeGIS
             dockpanel.FloatSize = new System.Drawing.Size((int)(this.ClientSize.Width / 2), (int)(this.ClientSize.Height * 0.4));
             dockpanel.OriginalSize = new System.Drawing.Size(200, 200);
             dockpanel.Size = new System.Drawing.Size((int)(this.ClientSize.Width / 2), (int)(this.ClientSize.Height * 0.4));
-            dockpanel.Text = "dockPane";
+            dockpanel.Text = "图表分析";
+
+        }
+
+        public void showloadingpic()
+        {
+            this.labelloading = new Label();
+            this.labelloading.BackColor = System.Drawing.Color.Transparent;
+            this.labelloading.Image = global::GlobeTradeGIS.Properties.Resources.loading;
+            this.labelloading.Location = new System.Drawing.Point(this.ClientSize.Width/2-65, this.ClientSize.Height/2-65);
+            this.labelloading.Name = "label";
+            this.labelloading.Size = new System.Drawing.Size(65, 65);
+            this.labelloading.TabIndex = 9;
+            this.labelloading.Click += new System.EventHandler(this.label_Click);
 
         }
         public void dockClear()
@@ -146,6 +162,28 @@ namespace GlobeTradeGIS
         private void dockPanel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainForm_ClientSizeChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+
+
+            this.windowsUIButtonPanel.Size = new System.Drawing.Size(this.ClientSize.Width, this.windowsUIButtonPanel.Height);
+        }
+
+        private void label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonloading_Click(object sender, EventArgs e)
+        {
+            showloadingpic();
+           // MainForm.instance.Enabled = false;
         }
     }
     }
