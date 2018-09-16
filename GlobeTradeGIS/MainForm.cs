@@ -125,14 +125,15 @@ namespace GlobeTradeGIS
 
         public void showloadingpic()
         {
-            this.labelloading = new Label();
-            this.labelloading.BackColor = System.Drawing.Color.Transparent;
-            this.labelloading.Image = global::GlobeTradeGIS.Properties.Resources.loading;
-            this.labelloading.Location = new System.Drawing.Point(this.ClientSize.Width/2-65, this.ClientSize.Height/2-65);
-            this.labelloading.Name = "label";
-            this.labelloading.Size = new System.Drawing.Size(65, 65);
-            this.labelloading.TabIndex = 9;
-            this.labelloading.Click += new System.EventHandler(this.label_Click);
+            labelloading = new Label();
+            labelloading.BackColor = System.Drawing.Color.Transparent;
+            labelloading.Image = global::GlobeTradeGIS.Properties.Resources.loading;
+            labelloading.Location = new System.Drawing.Point(this.ClientSize.Width/2-65, this.ClientSize.Height/2-65);
+            labelloading.Name = "label";
+            labelloading.Size = new System.Drawing.Size(65, 65);
+            labelloading.TabIndex = 9;
+            this.Controls.Add(this.labelloading);
+            // labelloading.Click += new System.EventHandler(this.label_Click);
 
         }
         public void dockClear()
@@ -170,15 +171,9 @@ namespace GlobeTradeGIS
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-
-
-            this.windowsUIButtonPanel.Size = new System.Drawing.Size(this.ClientSize.Width, this.windowsUIButtonPanel.Height);
+            this.windowsUIButtonPanel.Size = new System.Drawing.Size(this.ClientSize.Width, (int)(this.ClientSize.Height*0.07));
         }
 
-        private void label_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonloading_Click(object sender, EventArgs e)
         {
