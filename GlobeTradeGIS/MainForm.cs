@@ -4,6 +4,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using DevExpress.XtraBars.Docking;
+using GlobeTradeGIS.Properties;
 
 namespace GlobeTradeGIS
 {
@@ -17,7 +18,12 @@ namespace GlobeTradeGIS
         {
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
             InitializeComponent();
+            if (axMapControl.CheckMxFile("basicmapdata/trade.mxd"))
+                axMapControl.LoadMxFile("basicmapdata/trade.mxd");
+            else
+                MessageBox.Show("地图信息加载发生错误");
             //重新初始化windowsUIButtonpanel
+
             this.windowsUIButtonPanel.Size = new System.Drawing.Size(this.ClientSize.Width, this.windowsUIButtonPanel.Height);
             //创建浮动窗口
             //dock();
@@ -49,6 +55,7 @@ namespace GlobeTradeGIS
 
         private void timer_UI_in_Tick(object sender, EventArgs e)
         {
+            timer_UI_out.Stop();
             timer_UI_in.Interval = 1;//时间间隔0.005s            
             if (this.windowsUIButtonPanel.Location.Y >= 0)
             {
@@ -62,6 +69,7 @@ namespace GlobeTradeGIS
         }
         private void timer_UI_out_Tick(object sender, EventArgs e)
         {
+            timer_UI_in.Stop();
             timer_UI_out.Interval = 1;//时间间隔0.005s           
             if (this.windowsUIButtonPanel.Location.Y <= -this.windowsUIButtonPanel.Size.Height)
             {
@@ -136,6 +144,8 @@ namespace GlobeTradeGIS
             // labelloading.Click += new System.EventHandler(this.label_Click);
 
         }
+
+        
         public void dockClear()
         {
             dockManager.Clear();
@@ -172,13 +182,36 @@ namespace GlobeTradeGIS
         private void MainForm_Shown(object sender, EventArgs e)
         {
             this.windowsUIButtonPanel.Size = new System.Drawing.Size(this.ClientSize.Width, (int)(this.ClientSize.Height*0.07));
+            this.progressPanel.Location = new System.Drawing.Point(this.ClientSize.Width / 2 , this.ClientSize.Height / 2 );
+            //this.progressBarControl.Location = new System.Drawing.Point(this.ClientSize.Width-this.progressBarControl.Size.Width,this.ClientSize.Height-this.progressBarControl.Size.Height);
         }
 
 
         private void buttonloading_Click(object sender, EventArgs e)
         {
-            showloadingpic();
-           // MainForm.instance.Enabled = false;
+            this.progressPanel.Visible = true;
+            this.Enabled = false;
+        }
+
+        private void progressPanel_Click(object sender, EventArgs e)
+        {
+
+        }
+        int x = 1;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            if (x == 1)
+            {
+                this.popupContainerControl.Show();
+                x = 0;
+            }
+            else if(x==0)
+            {
+                this.popupContainerControl.Hide();
+                x = 1;
+            }
+
         }
     }
     }

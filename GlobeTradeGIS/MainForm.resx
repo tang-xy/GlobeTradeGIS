@@ -176,16 +176,15 @@
     <value>1</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons10" xml:space="preserve">
-    <value>graph</value>
+    <value>Compare</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons11" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAPdEVYdFRpdGxlAENoYXJ0O0JhcvfAgcwAAACpSURB
-        VFhH7c6xDQMxDEPR28n7z+YghQBa+KDURJfCxWsIQtSz934VhpMwnIThJAwnYeistbaT+xUMHRpVuV/B
-        0KFRlfsVDB0aVblfwdChUZX7FQwdGlW5X8HQoVGV+xUMHRpVuV/B0KFRlfsVDB0aVblfwdChUdXthON4
-        Bx1U3U44jnfQQdXthON4Bx1U3U74yXHK1bcT7gP3gfvAfeC/HngDhpMwnLOfD9iB3QgbRtSMAAAAAElF
-        TkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAEnRFWHRUaXRsZQBDb2x1bW47
+        R3JpZDvhhfMUAAAAe0lEQVRYR83QQQZAUQxD0bew7n9b/bOOLvWJpINDhRB93R2FoROGTnNUVf+l6N4Z
+        kIKh0xz0po2ie2dACoZOc9CbNorunQEpGDrNQW/aKLp3BqRg6DQHvWmj6N4ZkIKh0xz0po2ie2dACoZO
+        c9CbNorunQEpGDph6NPvAz8tH180jFT4AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="windowsUIButtonPanel.Buttons12" type="System.Int32, mscorlib">
@@ -229,7 +228,7 @@
     <value />
   </data>
   <data name="windowsUIButtonPanel.Buttons25" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons26" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -238,9 +237,70 @@
     <value>False</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons28" xml:space="preserve">
-    <value>country</value>
+    <value>graph</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons29" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAPdEVYdFRpdGxlAENoYXJ0O0JhcvfAgcwAAACpSURB
+        VFhH7c6xDQMxDEPR28n7z+YghQBa+KDURJfCxWsIQtSz934VhpMwnIThJAwnYeistbaT+xUMHRpVuV/B
+        0KFRlfsVDB0aVblfwdChUZX7FQwdGlW5X8HQoVGV+xUMHRpVuV/B0KFRlfsVDB0aVblfwdChUdXthON4
+        Bx1U3U44jnfQQdXthON4Bx1U3U74yXHK1bcT7gP3gfvAfeC/HngDhpMwnLOfD9iB3QgbRtSMAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons30" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons31" type="DevExpress.XtraBars.Docking2010.ImageLocation, DevExpress.XtraBars.v15.2">
+    <value>Default</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons32" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v15.2">
+    <value>PushButton</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons33" xml:space="preserve">
+    <value />
+  </data>
+  <data name="windowsUIButtonPanel.Buttons34" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons35" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons36" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons37" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="windowsUIButtonPanel.Buttons38" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons39" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons40" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons41" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="windowsUIButtonPanel.Buttons42" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="windowsUIButtonPanel.Buttons43" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons44" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons45" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons46" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons47" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
         DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKOWlDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
@@ -296,78 +356,6 @@
         F8or5HmuGxxzybJMNzgGpSRQSgKlJFBKAqUkUMqhvBcpEE1QWvyY8AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="windowsUIButtonPanel.Buttons30" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons31" type="DevExpress.XtraBars.Docking2010.ImageLocation, DevExpress.XtraBars.v15.2">
-    <value>Default</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons32" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v15.2">
-    <value>PushButton</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons33" xml:space="preserve">
-    <value />
-  </data>
-  <data name="windowsUIButtonPanel.Buttons34" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons35" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons36" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons37" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="windowsUIButtonPanel.Buttons38" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons39" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons40" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons41" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="windowsUIButtonPanel.Buttons42" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="windowsUIButtonPanel.Buttons43" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons44" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons45" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons46" xml:space="preserve">
-    <value>world</value>
-  </data>
-  <data name="windowsUIButtonPanel.Buttons47" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cQAAEnEB89x6jgAAA4lJREFUWEe1l81LVFEYxk2ij6k/IGpR1CzCSscZTReWQSAugiCyVYQSYUGLFhIF
-        BYUQRJuImYi+jNa1qAiiCBIqiBKCoAizTUO06QMx08rq98y8Z5y5c+94b6MPPLz3nPfr3Pecc8+5NWGR
-        SqVijY2NO5DpZDL5GJmFY8as9aXNJmZu1YOAKwmYIcEo8q+Hk/S/Qb5Gjrt+s83I18JERzweX0igfgJN
-        uMAB/ANfwsMk3Iw8BoehdBOKoVgWNhw0chyHLEho4vMJ2UWIWknaI9Y/FLoazc3N63D4aI7nkW30JZBb
-        aPchX0g3A88Sqra1tXUxzxn1KaZi57MEwN5cyadgr3WXAbtO9G8VuAIHMK2VPc+9cEqxAythc+7KHpjc
-        AZsY9pfNPohnzNwNIjcdvmsChRacnDLWFQpNTU2H8FHFvMkd95ipBuGmo9+68lBZUGjFatHECLoeuZM5
-        21pfX7/EzAKB3y74U8G9pP+7m3vaqppyTJRMBR25kcFTGDyz50IA5MWWlpZVZu4L7LZh96PY1xHdKy1I
-        2dHusv58pXnQqPTh0H6utOelO9ne3r4o5+gD4nTYgMv86b9kZtqiw5YzpvLr01nmEEQc9eXbaMHKgH4T
-        +m/FPkU8aDbH1VZuVSBdZBCKBPiFPEE15ueyeoB+A/zg9YPailrsbhrSMtYh4jUMy6f4r7G8JeDtlqN/
-        7rEvoXKrAjrVfA3CkCCjJOuxvCVAr/V13etTxKyMdJz6KSORRLfYbsssdwnQ7YN+i3Ns1gYgkuQz7Cbn
-        vHzqaVClOLr7Hp/cAKqaggAOJhKJBstdAgbRgf4O8jcyW+0irER9ngf05pa7AO0e8v5QblUg8jaMQr0p
-        vMFAOt22pZ00fTryh6hKfiX3XeRDtZXbbRV9Fsc4hFbrU4tCV6trcFKGc0HLmb+88uAOI12nCmhoaFiB
-        4Wn6v5h+Njl97PPGhePYnVrFqKurW4ruAIx8Twxg6XEsEDzUhQT9WmyPwkcKZD6RqFwWbhpRr2SC+aRg
-        t4LCK/jeRj5ADsJ78CptXWZzn2Se/a9kgsqCwYyX0qgg1n7FVOyy0nuh65MNQpXI2NV6O9TWuQn149HG
-        ulhgLoGIfC13sErkpgM5At/puZj0jcMn8ALtI3AvfrthD3198Bx8b7bhf0wcbH7D/JpV4v/9mhVDIydQ
-        0M+pL822up9TLwg4B7/nNTX/AIaa3JBq8m7fAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="windowsUIButtonPanel.Buttons48" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
@@ -408,7 +396,7 @@
     <value />
   </data>
   <data name="windowsUIButtonPanel.Buttons61" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons62" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -417,19 +405,27 @@
     <value>False</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons64" xml:space="preserve">
-    <value>home</value>
+    <value>world</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons65" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAEhvbWU7HnRkOAAAAWlJREFUWEfF
-        lNFOxDAMBO/D+m1IfHmIT5mTvWzS9DiVhxG1O/WuQOLRWvtX7PJOynAch6MJ+d1XsPjWkjPL4OTOrECE
-        s4vn/M2SnFkGJ3dyOEE5XN+dkjPL4OSOBrhw2CqRM8vg5E4+vAqH0xI5swxO7lwJh2WJnFkGJw9m4d8D
-        925aImeWwcmdVTjOpRI5swxGnoYPP97zf2C7RM4sQxb6z51wdqcl9D6UASE+6LhDLhy2fxM5swxDeCcc
-        tkrkzDIMwX24Ew5bfw7QAu6DK+GwLEFecFbgnXCYliAvWBX4SzjYEuQFswKfCIdfJcgLXIFPhkMpQV6g
-        BZ7h49kdeoKjOBeS88oIXg+KHsioC84FdcEuA3cE1AXngrpgl4E7AuqCc0FdsMvAHQF1wbmgLthl4I6A
-        uuBcUBfsMnBHQF1wLqgLdhm4I6AuOBfUBbsM3BFQF5wL6oJdBu4IqAvOBXXBLu/ELu+jPX4ATMNRVtCQ
-        oP8AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        cQAAEnEB89x6jgAAA4lJREFUWEe1l81LVFEYxk2ij6k/IGpR1CzCSscZTReWQSAugiCyVYQSYUGLFhIF
+        BYUQRJuImYi+jNa1qAiiCBIqiBKCoAizTUO06QMx08rq98y8Z5y5c+94b6MPPLz3nPfr3Pecc8+5NWGR
+        SqVijY2NO5DpZDL5GJmFY8as9aXNJmZu1YOAKwmYIcEo8q+Hk/S/Qb5Gjrt+s83I18JERzweX0igfgJN
+        uMAB/ANfwsMk3Iw8BoehdBOKoVgWNhw0chyHLEho4vMJ2UWIWknaI9Y/FLoazc3N63D4aI7nkW30JZBb
+        aPchX0g3A88Sqra1tXUxzxn1KaZi57MEwN5cyadgr3WXAbtO9G8VuAIHMK2VPc+9cEqxAythc+7KHpjc
+        AZsY9pfNPohnzNwNIjcdvmsChRacnDLWFQpNTU2H8FHFvMkd95ipBuGmo9+68lBZUGjFatHECLoeuZM5
+        21pfX7/EzAKB3y74U8G9pP+7m3vaqppyTJRMBR25kcFTGDyz50IA5MWWlpZVZu4L7LZh96PY1xHdKy1I
+        2dHusv58pXnQqPTh0H6utOelO9ne3r4o5+gD4nTYgMv86b9kZtqiw5YzpvLr01nmEEQc9eXbaMHKgH4T
+        +m/FPkU8aDbH1VZuVSBdZBCKBPiFPEE15ueyeoB+A/zg9YPailrsbhrSMtYh4jUMy6f4r7G8JeDtlqN/
+        7rEvoXKrAjrVfA3CkCCjJOuxvCVAr/V13etTxKyMdJz6KSORRLfYbsssdwnQ7YN+i3Ns1gYgkuQz7Cbn
+        vHzqaVClOLr7Hp/cAKqaggAOJhKJBstdAgbRgf4O8jcyW+0irER9ngf05pa7AO0e8v5QblUg8jaMQr0p
+        vMFAOt22pZ00fTryh6hKfiX3XeRDtZXbbRV9Fsc4hFbrU4tCV6trcFKGc0HLmb+88uAOI12nCmhoaFiB
+        4Wn6v5h+Njl97PPGhePYnVrFqKurW4ruAIx8Twxg6XEsEDzUhQT9WmyPwkcKZD6RqFwWbhpRr2SC+aRg
+        t4LCK/jeRj5ADsJ78CptXWZzn2Se/a9kgsqCwYyX0qgg1n7FVOyy0nuh65MNQpXI2NV6O9TWuQn149HG
+        ulhgLoGIfC13sErkpgM5At/puZj0jcMn8ALtI3AvfrthD3198Bx8b7bhf0wcbH7D/JpV4v/9mhVDIydQ
+        0M+pL822up9TLwg4B7/nNTX/AIaa3JBq8m7fAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="windowsUIButtonPanel.Buttons66" type="System.Int32, mscorlib">
@@ -472,12 +468,76 @@
     <value />
   </data>
   <data name="windowsUIButtonPanel.Buttons79" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons80" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="windowsUIButtonPanel.Buttons81" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons82" xml:space="preserve">
+    <value>home</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons83" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAEhvbWU7HnRkOAAAAWlJREFUWEfF
+        lNFOxDAMBO/D+m1IfHmIT5mTvWzS9DiVhxG1O/WuQOLRWvtX7PJOynAch6MJ+d1XsPjWkjPL4OTOrECE
+        s4vn/M2SnFkGJ3dyOEE5XN+dkjPL4OSOBrhw2CqRM8vg5E4+vAqH0xI5swxO7lwJh2WJnFkGJw9m4d8D
+        925aImeWwcmdVTjOpRI5swxGnoYPP97zf2C7RM4sQxb6z51wdqcl9D6UASE+6LhDLhy2fxM5swxDeCcc
+        tkrkzDIMwX24Ew5bfw7QAu6DK+GwLEFecFbgnXCYliAvWBX4SzjYEuQFswKfCIdfJcgLXIFPhkMpQV6g
+        BZ7h49kdeoKjOBeS88oIXg+KHsioC84FdcEuA3cE1AXngrpgl4E7AuqCc0FdsMvAHQF1wbmgLthl4I6A
+        uuBcUBfsMnBHQF1wLqgLdhm4I6AuOBfUBbsM3BFQF5wL6oJdBu4IqAvOBXXBLu/ELu+jPX4ATMNRVtCQ
+        oP8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons84" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons85" type="DevExpress.XtraBars.Docking2010.ImageLocation, DevExpress.XtraBars.v15.2">
+    <value>Default</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons86" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v15.2">
+    <value>PushButton</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons87" xml:space="preserve">
+    <value />
+  </data>
+  <data name="windowsUIButtonPanel.Buttons88" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons89" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons90" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons91" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="windowsUIButtonPanel.Buttons92" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons93" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons94" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons95" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="windowsUIButtonPanel.Buttons96" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="windowsUIButtonPanel.Buttons97" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons98" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="windowsUIButtonPanel.Buttons99" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="windowsUIButtonPanel.Location" type="System.Drawing.Point, System.Drawing">
@@ -505,7 +565,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;windowsUIButtonPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="axLicenseControl.Enabled" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -541,7 +601,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;axLicenseControl.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="axMapControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -866,7 +926,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAA/////wIAAAAAAP//CgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA
-        AAABAAAA9AEAAAAAAAD//27XlN1tg9ARh+wIAAnscyrMAAAADwABAAAAAQAAAD0CAAAAAAAAcNeU3W2D
+        AAD/////9AEAAAAAAAD//27XlN1tg9ARh+wIAAnscyrMAAAADwABAAAAAQAAAD0CAAAAAAAAcNeU3W2D
         0BGH7AgACexzKs0AAAAEAHaqveY1TdARmL4AgF987SEAAAAAAAAAAAAAAAACAAMAQsulANpS0BGo8gBg
         jIXt5c4AAAACAIAAAAAFAAAAAAAAAAAA8D8AwAc9m1XtPwAAAAAAAB5AAIQvTKYqJEABAAAABQAAAAAA
         AAAAAAAAAADwPwDABz2bVe0/AAAAAAAA8D8AhC9MpiokQAAAAAAAAB5AAIQvTKYqJEAAAAAAAAAeQADA
@@ -906,7 +966,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;axMapControl.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <metadata name="timer_UI_in.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -921,13 +981,127 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>37</value>
+    <value>112</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1387, 488</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, 358</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 47</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button popup</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="popupContainerControl.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="label.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 96</value>
+  </data>
+  <data name="label.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label.Name" xml:space="preserve">
+    <value>label</value>
+  </data>
+  <data name="&gt;&gt;label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label.Parent" xml:space="preserve">
+    <value>popupContainerControl</value>
+  </data>
+  <data name="&gt;&gt;label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="popupContainerControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 183</value>
+  </data>
+  <data name="popupContainerControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 96</value>
+  </data>
+  <data name="popupContainerControl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;popupContainerControl.Name" xml:space="preserve">
+    <value>popupContainerControl</value>
+  </data>
+  <data name="&gt;&gt;popupContainerControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PopupContainerControl, DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;popupContainerControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;popupContainerControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="progressPanel.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="progressPanel.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="progressPanel.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="progressPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 272</value>
+  </data>
+  <data name="progressPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="progressPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 50</value>
+  </data>
+  <data name="progressPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="progressPanel.Text" xml:space="preserve">
+    <value>progressPanel</value>
+  </data>
+  <data name="progressPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;progressPanel.Name" xml:space="preserve">
+    <value>progressPanel</value>
+  </data>
+  <data name="&gt;&gt;progressPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraWaitForm.ProgressPanel, DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;progressPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;progressPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="buttonloading.Location" type="System.Drawing.Point, System.Drawing">
     <value>690, 358</value>
@@ -951,7 +1125,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonloading.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1264,10 +1438,28 @@
   <data name="&gt;&gt;dockManager.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Docking.DockManager, DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;commercial_service_exportTableAdapter1.Name" xml:space="preserve">
+    <value>commercial_service_exportTableAdapter1</value>
+  </data>
+  <data name="&gt;&gt;commercial_service_exportTableAdapter1.Type" xml:space="preserve">
+    <value>GlobeTradeGIS.GlobeTradeDataSetTableAdapters.commercial_service_exportTableAdapter, GlobeTradeDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commercial_service_exportTableAdapter2.Name" xml:space="preserve">
+    <value>commercial_service_exportTableAdapter2</value>
+  </data>
+  <data name="&gt;&gt;commercial_service_exportTableAdapter2.Type" xml:space="preserve">
+    <value>GlobeTradeGIS.GlobeTradeDataSetTableAdapters.commercial_service_exportTableAdapter, GlobeTradeDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <metadata name="commercial_service_exportTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>442, 17</value>
+  </metadata>
+  <metadata name="commercial_service_exportTableAdapter2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>780, 17</value>
+  </metadata>
 </root>
