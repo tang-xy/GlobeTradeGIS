@@ -2,6 +2,8 @@
 using DevExpress.DataAccess.Sql.DataApi;
 using DevExpress.XtraBars.Docking;
 using DevExpress.XtraCharts;
+using ESRI.ArcGIS.Carto;
+using ESRI.ArcGIS.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -99,8 +101,10 @@ namespace GlobeTradeGIS
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //初始化
-            this.Enabled = false;
+
+        }
+        override public void ToCountry(string countryName)
+        {
             countryChart.Dispose();
             dockContainer.Dispose();
             dockClear();
@@ -121,10 +125,8 @@ namespace GlobeTradeGIS
             countryChart.MouseUp += CountryChart_MouseUp;
             countryChart.CustomDrawCrosshair += CountryChart_CustomDrawCrosshair;
             //填充数据
-            showChart(countryChart, "country", "CHN");
-            this.Enabled = true;
+            showChart(countryChart, "country", countryName);
         }
-
         private void CountryChart_CustomDrawCrosshair(object sender, CustomDrawCrosshairEventArgs e)
         {
 
