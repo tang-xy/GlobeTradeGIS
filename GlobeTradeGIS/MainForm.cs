@@ -18,8 +18,8 @@ namespace GlobeTradeGIS
         {
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
             InitializeComponent();
-            if (axMapControl.CheckMxFile("basicmapdata/trade.mxd"))
-                axMapControl.LoadMxFile("basicmapdata/trade.mxd");
+            if (axMapControl.CheckMxFile("data/trade.mxd"))
+                axMapControl.LoadMxFile("data/trade.mxd");
             else
                 MessageBox.Show("地图信息加载发生错误");
             //重新初始化windowsUIButtonpanel

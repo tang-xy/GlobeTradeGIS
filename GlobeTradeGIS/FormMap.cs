@@ -28,6 +28,7 @@ namespace GlobeTradeGIS
             importtype = new string[] { "food", "goods", "fuel", "service", "merchandise", "commercial service" };
             importname = new string[] { "food_import", "goods_import", "fuel_import", "service_import", "merchandise_import", "commercial_service_import" };
             dockContainer.Resize += new System.EventHandler(this.dockContainer_Resize);
+            
             nowmode = "home";
         }
 
@@ -99,6 +100,7 @@ namespace GlobeTradeGIS
         private void button1_Click(object sender, EventArgs e)
         {
             //初始化
+            this.Enabled = false;
             countryChart.Dispose();
             dockContainer.Dispose();
             dockClear();
@@ -119,7 +121,8 @@ namespace GlobeTradeGIS
             countryChart.MouseUp += CountryChart_MouseUp;
             countryChart.CustomDrawCrosshair += CountryChart_CustomDrawCrosshair;
             //填充数据
-            showChart(countryChart, "country", "ARM");
+            showChart(countryChart, "country", "CHN");
+            this.Enabled = true;
         }
 
         private void CountryChart_CustomDrawCrosshair(object sender, CustomDrawCrosshairEventArgs e)
