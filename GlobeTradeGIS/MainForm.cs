@@ -5,6 +5,8 @@ using System.Drawing;
 using System.Windows.Forms;
 using DevExpress.XtraBars.Docking;
 using GlobeTradeGIS.Properties;
+using ESRI.ArcGIS.Geometry;
+using ESRI.ArcGIS.Controls;
 
 namespace GlobeTradeGIS
 {
@@ -13,6 +15,7 @@ namespace GlobeTradeGIS
         public DockPanel dockpanel;
         public Label labelloading;
         public static MainForm instance;
+
 
         public MainForm()
         {
@@ -23,6 +26,7 @@ namespace GlobeTradeGIS
             else
                 MessageBox.Show("地图信息加载发生错误");
             //重新初始化windowsUIButtonpanel
+            axMapControl.MousePointer = esriControlsMousePointer.esriPointerPan;
 
             this.windowsUIButtonPanel.Size = new System.Drawing.Size(this.ClientSize.Width, this.windowsUIButtonPanel.Height);
             //创建浮动窗口
@@ -211,6 +215,19 @@ namespace GlobeTradeGIS
                 this.popupContainerControl.Hide();
                 x = 1;
             }
+
+        }
+
+        private void axMapControl_OnMouseDown(object sender, ESRI.ArcGIS.Controls.IMapControlEvents2_OnMouseDownEvent e)
+        {
+            ESRI.ArcGIS.Geometry.IEnvelope ipEnv;
+
+            ipEnv = axMapControl.Extent;
+            this.axMapControl.Pan();
+        }
+
+        public void axMapControl_OnMouseUp(object sender, IMapControlEvents2_OnMouseUpEvent e)
+        {
 
         }
     }
