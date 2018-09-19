@@ -7,6 +7,8 @@ using DevExpress.XtraBars.Docking;
 using GlobeTradeGIS.Properties;
 using ESRI.ArcGIS.Geometry;
 using ESRI.ArcGIS.Controls;
+using ESRI.ArcGIS.Carto;
+using ESRI.ArcGIS.Geodatabase;
 
 namespace GlobeTradeGIS
 {
@@ -15,14 +17,14 @@ namespace GlobeTradeGIS
         public DockPanel dockpanel;
         public Label labelloading;
         public static MainForm instance;
-
+        string nowmode;
 
         public MainForm()
         {
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
             InitializeComponent();
-            if (axMapControl.CheckMxFile("basicmapdata/trade.mxd"))
-                axMapControl.LoadMxFile("basicmapdata/trade.mxd");
+            if (axMapControl.CheckMxFile("data/trade.mxd"))
+                axMapControl.LoadMxFile("data/trade.mxd");
             else
                 MessageBox.Show("地图信息加载发生错误");
             //重新初始化windowsUIButtonpanel
@@ -220,15 +222,165 @@ namespace GlobeTradeGIS
 
         private void axMapControl_OnMouseDown(object sender, ESRI.ArcGIS.Controls.IMapControlEvents2_OnMouseDownEvent e)
         {
-            ESRI.ArcGIS.Geometry.IEnvelope ipEnv;
-
-            ipEnv = axMapControl.Extent;
-            this.axMapControl.Pan();
+            if(e.button == 2)
+            {
+                ESRI.ArcGIS.Geometry.IEnvelope ipEnv;
+                ipEnv = axMapControl.Extent;
+                this.axMapControl.Pan();
+            }
         }
 
         public void axMapControl_OnMouseUp(object sender, IMapControlEvents2_OnMouseUpEvent e)
         {
+            if(nowmode == null)
+            {
+                //nowmode = "country";
+                IMap pMap = axMapControl.Map;
+                IActiveView pActiveView = pMap as IActiveView;
+                if (e.shift == 0)
+                {
+                    ClearSelect(axMapControl);
+                }
+                IFeatureLayer pFeatureLayer = GetLayerByName(axMapControl, "Trade") as IFeatureLayer;
+                IFeatureClass pFeatureClass = pFeatureLayer.FeatureClass;
+                IPoint point = pActiveView.ScreenDisplay.DisplayTransformation.ToMapPoint(e.x, e.y);
+                IFeature feature = GetFeatureOnMouseDown(point, "Trade", axMapControl);
+                pMap.SelectFeature(GetLayerByName(axMapControl, "Trade"), feature);
+                //axMapControl1.Map.SelectByShape(point, null, true);//第三个参数为是否只选中一个
+                axMapControl.Refresh(esriViewDrawPhase.esriViewGeoSelection, null, null); //选中要素高亮显示
+                if(feature != null)
+                {
+                    nowmode = "country";
+                    axMapControl.CenterAt((feature.Shape as ESRI.ArcGIS.Geometry.IPolygon).ToPoint);
+                    for (int i = 0; i < feature.Fields.FieldCount; i++)
+                    {
+                        if (feature.Fields.get_Field(i).Name == "Country_Co")
+                        {
+                            progressPanel.Location = new System.Drawing.Point(this .ClientSize.Width/2-this.progressPanel.Width/2,this.ClientSize.Height/2-this.progressPanel.Height/2);
+                            progressPanel.Visible = true;
+                            this.Enabled = false;
+                            ToCountry(feature.Value[i].ToString());
+                            progressPanel.Visible = false;
+                            this.Enabled = true;
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+        virtual public void ToCountry(string countryName)
+        {
 
         }
+        private void ClearSelect(AxMapControl t)
+        {
+            IMap pMap = t.Map;
+            IActiveView pActiveView = pMap as IActiveView;
+            pActiveView.FocusMap.ClearSelection();
+            pActiveView.PartialRefresh(esriViewDrawPhase.esriViewGeoSelection, null, pActiveView.Extent);
+            t.CurrentTool = null;
+        }
+        private ILayer GetLayerByName(AxMapControl axMapControl, string name)
+        {
+            try
+            {
+                ILayer layer;
+                for (int i = 0; i < 1000; i++)
+                {
+                    layer = axMapControl.get_Layer(i);
+                    if (layer.Name == name)
+                    {
+                        return layer;
+                    }
+                }
+                return null;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public IFeature GetFeatureOnMouseDown(IPoint point, string name, AxMapControl axMapControl1)
+        {
+            try
+            {
+                ILayer layer = GetLayerByName(axMapControl1, name);
+                if (layer == null)
+                {
+                    MessageBox.Show("请加载图层！", "提示");
+                    return null;
+                }
+                //IFeatureLayer fLayer = layer as IFeatureLayer;
+                //IFeatureSelection featureSelection = fLayer as IFeatureSelection;
+                //featureSelection.Clear();
+                //if (featureSelection == null)
+                //{
+                //    return null;
+                //}
+
+                IFeatureLayer featureLayer = layer as IFeatureLayer;
+                if (featureLayer == null)
+                    return null;
+                IFeatureClass featureClass = featureLayer.FeatureClass;
+                if (featureClass == null)
+                    return null;
+
+                //IPoint point = axMapControl1.ActiveView.ScreenDisplay.DisplayTransformation.ToMapPoint(x, y);
+                IGeometry geometry = point as IGeometry;
+
+                double length = ConvertPixelsToMapUnits(axMapControl1.ActiveView, 4);
+                ITopologicalOperator pTopo = geometry as ITopologicalOperator;
+                IGeometry buffer = pTopo.Buffer(length);
+                geometry = buffer.Envelope as IGeometry;
+
+                ISpatialFilter spatialFilter = new SpatialFilterClass();
+                spatialFilter.Geometry = geometry;
+                switch (featureClass.ShapeType)
+                {
+                    case esriGeometryType.esriGeometryPoint:
+                        spatialFilter.SpatialRel = esriSpatialRelEnum.esriSpatialRelContains;
+                        break;
+                    case esriGeometryType.esriGeometryPolygon:
+                        spatialFilter.SpatialRel = esriSpatialRelEnum.esriSpatialRelIntersects;
+                        break;
+                    case esriGeometryType.esriGeometryPolyline:
+                        spatialFilter.SpatialRel = esriSpatialRelEnum.esriSpatialRelCrosses;
+                        break;
+                }
+                spatialFilter.GeometryField = featureClass.ShapeFieldName;
+                IQueryFilter filter = spatialFilter as IQueryFilter;
+
+                IFeatureCursor cursor = featureClass.Search(filter, false);
+                IFeature pfeature = cursor.NextFeature();
+                if (pfeature != null)
+                {
+                    return pfeature;
+                    //featureSelection.Add(pfeature);
+                    //pfeature = cursor.NextFeature();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+
+                return null;
+            }
+        }
+        private double ConvertPixelsToMapUnits(IActiveView pActiveView, double pixelUnits)
+        {
+            // Uses the ratio of the size of the map in pixels to map units to do the conversion
+            IPoint p1 = pActiveView.ScreenDisplay.DisplayTransformation.VisibleBounds.UpperLeft;
+            IPoint p2 = pActiveView.ScreenDisplay.DisplayTransformation.VisibleBounds.UpperRight;
+            int x1, x2, y1, y2;
+            pActiveView.ScreenDisplay.DisplayTransformation.FromMapPoint(p1, out x1, out y1);
+            pActiveView.ScreenDisplay.DisplayTransformation.FromMapPoint(p2, out x2, out y2);
+            double pixelExtent = x2 - x1;
+            double realWorldDisplayExtent = pActiveView.ScreenDisplay.DisplayTransformation.VisibleBounds.Width;
+            double sizeOfOnePixel = realWorldDisplayExtent / pixelExtent;
+            return pixelUnits * sizeOfOnePixel;
+        }
     }
-    }
+}
