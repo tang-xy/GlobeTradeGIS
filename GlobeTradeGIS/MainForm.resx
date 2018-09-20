@@ -117,10 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="windowsUIButtonPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <data name="windowsUIButtonPanel.Buttons" xml:space="preserve">
     <value>min</value>
   </data>
@@ -209,6 +205,7 @@
   <data name="windowsUIButtonPanel.Buttons18" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="windowsUIButtonPanel.Buttons19" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -565,7 +562,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;windowsUIButtonPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="axLicenseControl.Enabled" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -601,7 +598,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;axLicenseControl.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="axMapControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -966,7 +963,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;axMapControl.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <metadata name="timer_UI_in.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -989,80 +986,203 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1387, 488</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>900, 358</value>
+  <data name="label_eventexpressdet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 47</value>
+  <data name="label_eventexpressdet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 214</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="label_eventexpressdet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 182</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>button popup</value>
+  <data name="label_eventexpressdet.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="label_eventexpressdet.Text" xml:space="preserve">
+    <value>希腊债务危机，源于2009年12月希腊政府公布政府财政赤字，而后全球三大信用评级相继调低希腊主权信用评级从而揭开希腊债务危机的序幕。希腊债务危机的直接原因即是政府的财政赤字，除希腊外欧洲大部分国家都存在较高的财政赤字，因此，希腊债务危机也引爆了欧洲债务危机。</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label_eventexpressdet.Name" xml:space="preserve">
+    <value>label_eventexpressdet</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="popupContainerControl.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>Silver</value>
-  </data>
-  <data name="label.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 96</value>
-  </data>
-  <data name="label.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label.Name" xml:space="preserve">
-    <value>label</value>
-  </data>
-  <data name="&gt;&gt;label.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_eventexpressdet.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label.Parent" xml:space="preserve">
-    <value>popupContainerControl</value>
+  <data name="&gt;&gt;label_eventexpressdet.Parent" xml:space="preserve">
+    <value>panelControl</value>
   </data>
-  <data name="&gt;&gt;label.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_eventexpressdet.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="popupContainerControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 183</value>
+  <data name="label_Eventexpress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 13.8pt, style=Bold</value>
   </data>
-  <data name="popupContainerControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 96</value>
+  <data name="label_Eventexpress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 170</value>
   </data>
-  <data name="popupContainerControl.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_Eventexpress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 29</value>
+  </data>
+  <data name="label_Eventexpress.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label_Eventexpress.Text" xml:space="preserve">
+    <value>事件描述</value>
+  </data>
+  <data name="&gt;&gt;label_Eventexpress.Name" xml:space="preserve">
+    <value>label_Eventexpress</value>
+  </data>
+  <data name="&gt;&gt;label_Eventexpress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Eventexpress.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;label_Eventexpress.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_rangedet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="label_rangedet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 125</value>
+  </data>
+  <data name="label_rangedet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label_rangedet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 45</value>
+  </data>
+  <data name="label_rangedet.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label_rangedet.Text" xml:space="preserve">
+    <value>欧元区；美国；中国；俄罗斯</value>
+  </data>
+  <data name="&gt;&gt;label_rangedet.Name" xml:space="preserve">
+    <value>label_rangedet</value>
+  </data>
+  <data name="&gt;&gt;label_rangedet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_rangedet.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;label_rangedet.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_Range.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 13.8pt, style=Bold</value>
+  </data>
+  <data name="label_Range.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 84</value>
+  </data>
+  <data name="label_Range.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label_Range.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 29</value>
+  </data>
+  <data name="label_Range.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_Range.Text" xml:space="preserve">
+    <value>波及范围</value>
+  </data>
+  <data name="&gt;&gt;label_Range.Name" xml:space="preserve">
+    <value>label_Range</value>
+  </data>
+  <data name="&gt;&gt;label_Range.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Range.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;label_Range.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_namedet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="label_namedet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 47</value>
+  </data>
+  <data name="label_namedet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label_namedet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 24</value>
+  </data>
+  <data name="label_namedet.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label_namedet.Text" xml:space="preserve">
+    <value>希腊债务危机</value>
+  </data>
+  <data name="&gt;&gt;label_namedet.Name" xml:space="preserve">
+    <value>label_namedet</value>
+  </data>
+  <data name="&gt;&gt;label_namedet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_namedet.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;label_namedet.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_Name.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 15pt, style=Bold</value>
+  </data>
+  <data name="label_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 2</value>
+  </data>
+  <data name="label_Name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 30</value>
+  </data>
+  <data name="label_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_Name.Text" xml:space="preserve">
+    <value>事件名称</value>
+  </data>
+  <data name="&gt;&gt;label_Name.Name" xml:space="preserve">
+    <value>label_Name</value>
+  </data>
+  <data name="&gt;&gt;label_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Name.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;label_Name.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 68</value>
+  </data>
+  <data name="panelControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="panelControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 438</value>
+  </data>
+  <data name="panelControl.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;popupContainerControl.Name" xml:space="preserve">
-    <value>popupContainerControl</value>
+  <data name="&gt;&gt;panelControl.Name" xml:space="preserve">
+    <value>panelControl</value>
   </data>
-  <data name="&gt;&gt;popupContainerControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PopupContainerControl, DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;panelControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;popupContainerControl.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;popupContainerControl.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;panelControl.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="progressPanel.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
     <value>Transparent</value>
@@ -1101,31 +1221,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonloading.Location" type="System.Drawing.Point, System.Drawing">
-    <value>690, 358</value>
-  </data>
-  <data name="buttonloading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 47</value>
-  </data>
-  <data name="buttonloading.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="buttonloading.Text" xml:space="preserve">
-    <value>button loading</value>
-  </data>
-  <data name="&gt;&gt;buttonloading.Name" xml:space="preserve">
-    <value>buttonloading</value>
-  </data>
-  <data name="&gt;&gt;buttonloading.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonloading.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;buttonloading.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1450,6 +1546,12 @@
   <data name="&gt;&gt;commercial_service_exportTableAdapter2.Type" xml:space="preserve">
     <value>GlobeTradeGIS.GlobeTradeDataSetTableAdapters.commercial_service_exportTableAdapter, GlobeTradeDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="&gt;&gt;globeTradeDataSet1.Name" xml:space="preserve">
+    <value>globeTradeDataSet1</value>
+  </data>
+  <data name="&gt;&gt;globeTradeDataSet1.Type" xml:space="preserve">
+    <value>GlobeTradeGIS.GlobeTradeDataSet, GlobeTradeDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
   </data>
@@ -1461,5 +1563,8 @@
   </metadata>
   <metadata name="commercial_service_exportTableAdapter2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>780, 17</value>
+  </metadata>
+  <metadata name="globeTradeDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 60</value>
   </metadata>
 </root>

@@ -36,23 +36,27 @@
             this.timer_UI_in = new System.Windows.Forms.Timer(this.components);
             this.timer_UI_out = new System.Windows.Forms.Timer(this.components);
             this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
-            this.buttonloading = new System.Windows.Forms.Button();
             this.commercial_service_exportTableAdapter1 = new GlobeTradeGIS.GlobeTradeDataSetTableAdapters.commercial_service_exportTableAdapter();
             this.commercial_service_exportTableAdapter2 = new GlobeTradeGIS.GlobeTradeDataSetTableAdapters.commercial_service_exportTableAdapter();
             this.progressPanel = new DevExpress.XtraWaitForm.ProgressPanel();
-            this.popupContainerControl = new DevExpress.XtraEditors.PopupContainerControl();
-            this.label = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.globeTradeDataSet1 = new GlobeTradeGIS.GlobeTradeDataSet();
+            this.panelControl = new DevExpress.XtraEditors.PanelControl();
+            this.label_eventexpressdet = new System.Windows.Forms.Label();
+            this.label_Eventexpress = new System.Windows.Forms.Label();
+            this.label_rangedet = new System.Windows.Forms.Label();
+            this.label_Range = new System.Windows.Forms.Label();
+            this.label_namedet = new System.Windows.Forms.Label();
+            this.label_Name = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupContainerControl)).BeginInit();
-            this.popupContainerControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.globeTradeDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl)).BeginInit();
+            this.panelControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // windowsUIButtonPanel
             // 
-            resources.ApplyResources(this.windowsUIButtonPanel, "windowsUIButtonPanel");
             this.windowsUIButtonPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.windowsUIButtonPanel.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
             new DevExpress.XtraBars.Docking2010.WindowsUIButton(resources.GetString("windowsUIButtonPanel.Buttons"), ((System.Drawing.Image)(resources.GetObject("windowsUIButtonPanel.Buttons1"))), ((int)(resources.GetObject("windowsUIButtonPanel.Buttons2"))), ((DevExpress.XtraBars.Docking2010.ButtonStyle)(resources.GetObject("windowsUIButtonPanel.Buttons3"))), ((int)(resources.GetObject("windowsUIButtonPanel.Buttons4")))),
@@ -64,6 +68,7 @@
             new DevExpress.XtraBars.Docking2010.WindowsUIButton(resources.GetString("windowsUIButtonPanel.Buttons82"), ((System.Drawing.Image)(resources.GetObject("windowsUIButtonPanel.Buttons83"))), ((int)(resources.GetObject("windowsUIButtonPanel.Buttons84"))), ((DevExpress.XtraBars.Docking2010.ImageLocation)(resources.GetObject("windowsUIButtonPanel.Buttons85"))), ((DevExpress.XtraBars.Docking2010.ButtonStyle)(resources.GetObject("windowsUIButtonPanel.Buttons86"))), resources.GetString("windowsUIButtonPanel.Buttons87"), ((bool)(resources.GetObject("windowsUIButtonPanel.Buttons88"))), ((int)(resources.GetObject("windowsUIButtonPanel.Buttons89"))), ((bool)(resources.GetObject("windowsUIButtonPanel.Buttons90"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("windowsUIButtonPanel.Buttons91"))), ((bool)(resources.GetObject("windowsUIButtonPanel.Buttons92"))), ((bool)(resources.GetObject("windowsUIButtonPanel.Buttons93"))), ((bool)(resources.GetObject("windowsUIButtonPanel.Buttons94"))), ((object)(resources.GetObject("windowsUIButtonPanel.Buttons95"))), ((object)(resources.GetObject("windowsUIButtonPanel.Buttons96"))), ((int)(resources.GetObject("windowsUIButtonPanel.Buttons97"))), ((bool)(resources.GetObject("windowsUIButtonPanel.Buttons98"))), ((bool)(resources.GetObject("windowsUIButtonPanel.Buttons99"))))});
             this.windowsUIButtonPanel.ContentAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.windowsUIButtonPanel.ForeColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.windowsUIButtonPanel, "windowsUIButtonPanel");
             this.windowsUIButtonPanel.Name = "windowsUIButtonPanel";
             this.windowsUIButtonPanel.ButtonClick += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.windowsUIButtonPanel1_ButtonClick);
             this.windowsUIButtonPanel.ButtonChecked += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.windowsUIButtonPanel1_ButtonClicked);
@@ -107,13 +112,6 @@
             "DevExpress.XtraBars.Navigation.OfficeNavigationBar",
             "DevExpress.XtraBars.Navigation.TileNavPane"});
             // 
-            // buttonloading
-            // 
-            resources.ApplyResources(this.buttonloading, "buttonloading");
-            this.buttonloading.Name = "buttonloading";
-            this.buttonloading.UseVisualStyleBackColor = true;
-            this.buttonloading.Click += new System.EventHandler(this.buttonloading_Click);
-            // 
             // commercial_service_exportTableAdapter1
             // 
             this.commercial_service_exportTableAdapter1.ClearBeforeFill = true;
@@ -135,35 +133,62 @@
             this.progressPanel.ShowDescription = false;
             this.progressPanel.Click += new System.EventHandler(this.progressPanel_Click);
             // 
-            // popupContainerControl
+            // globeTradeDataSet1
             // 
-            this.popupContainerControl.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("popupContainerControl.Appearance.BackColor")));
-            this.popupContainerControl.Appearance.Options.UseBackColor = true;
-            this.popupContainerControl.Controls.Add(this.label);
-            resources.ApplyResources(this.popupContainerControl, "popupContainerControl");
-            this.popupContainerControl.Name = "popupContainerControl";
+            this.globeTradeDataSet1.DataSetName = "GlobeTradeDataSet";
+            this.globeTradeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label
+            // panelControl
             // 
-            resources.ApplyResources(this.label, "label");
-            this.label.Name = "label";
+            this.panelControl.Controls.Add(this.label_eventexpressdet);
+            this.panelControl.Controls.Add(this.label_Eventexpress);
+            this.panelControl.Controls.Add(this.label_rangedet);
+            this.panelControl.Controls.Add(this.label_Range);
+            this.panelControl.Controls.Add(this.label_namedet);
+            this.panelControl.Controls.Add(this.label_Name);
+            resources.ApplyResources(this.panelControl, "panelControl");
+            this.panelControl.Name = "panelControl";
             // 
-            // button1
+            // label_eventexpressdet
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.label_eventexpressdet, "label_eventexpressdet");
+            this.label_eventexpressdet.Name = "label_eventexpressdet";
+            // 
+            // label_Eventexpress
+            // 
+            resources.ApplyResources(this.label_Eventexpress, "label_Eventexpress");
+            this.label_Eventexpress.Name = "label_Eventexpress";
+            // 
+            // label_rangedet
+            // 
+            resources.ApplyResources(this.label_rangedet, "label_rangedet");
+            this.label_rangedet.Name = "label_rangedet";
+            this.label_rangedet.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label_Range
+            // 
+            resources.ApplyResources(this.label_Range, "label_Range");
+            this.label_Range.Name = "label_Range";
+            this.label_Range.Click += new System.EventHandler(this.label_Range_Click);
+            // 
+            // label_namedet
+            // 
+            resources.ApplyResources(this.label_namedet, "label_namedet");
+            this.label_namedet.Name = "label_namedet";
+            this.label_namedet.Click += new System.EventHandler(this.label_namedet_Click);
+            // 
+            // label_Name
+            // 
+            resources.ApplyResources(this.label_Name, "label_Name");
+            this.label_Name.Name = "label_Name";
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.popupContainerControl);
+            this.Controls.Add(this.panelControl);
             this.Controls.Add(this.progressPanel);
-            this.Controls.Add(this.buttonloading);
             this.Controls.Add(this.windowsUIButtonPanel);
             this.Controls.Add(this.axMapControl);
             this.Controls.Add(this.axLicenseControl);
@@ -176,8 +201,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupContainerControl)).EndInit();
-            this.popupContainerControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.globeTradeDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl)).EndInit();
+            this.panelControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -189,12 +215,16 @@
         private System.Windows.Forms.Timer timer_UI_in;
         private System.Windows.Forms.Timer timer_UI_out;
         private DevExpress.XtraBars.Docking.DockManager dockManager;
-        private System.Windows.Forms.Button buttonloading;
         private GlobeTradeDataSetTableAdapters.commercial_service_exportTableAdapter commercial_service_exportTableAdapter1;
         private GlobeTradeDataSetTableAdapters.commercial_service_exportTableAdapter commercial_service_exportTableAdapter2;
         private DevExpress.XtraWaitForm.ProgressPanel progressPanel;
-        private DevExpress.XtraEditors.PopupContainerControl popupContainerControl;
-        private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Button button1;
+        private GlobeTradeDataSet globeTradeDataSet1;
+        private DevExpress.XtraEditors.PanelControl panelControl;
+        private System.Windows.Forms.Label label_rangedet;
+        private System.Windows.Forms.Label label_Range;
+        private System.Windows.Forms.Label label_namedet;
+        private System.Windows.Forms.Label label_Name;
+        private System.Windows.Forms.Label label_Eventexpress;
+        private System.Windows.Forms.Label label_eventexpressdet;
     }
 }
