@@ -99,7 +99,6 @@
             // dockManager
             // 
             this.dockManager.DockingOptions.DockPanelInCaptionRegion = DevExpress.Utils.DefaultBoolean.True;
-            this.dockManager.DockingOptions.ShowCloseButton = false;
             this.dockManager.Form = this;
             this.dockManager.TopZIndexControls.AddRange(new string[] {
             "DevExpress.XtraBars.BarDockControl",

@@ -9,6 +9,7 @@ using ESRI.ArcGIS.Geometry;
 using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Geodatabase;
+using DevExpress.XtraCharts;
 
 namespace GlobeTradeGIS
 {
@@ -91,7 +92,7 @@ namespace GlobeTradeGIS
                 System.Environment.Exit(0);
             else if (e.Button.Properties.GroupIndex == 0)
                 this.WindowState = FormWindowState.Minimized;
-            else if (e.Button.Properties.GroupIndex == 6)
+            else if (e.Button.Properties.GroupIndex == 5)
             {
                 sc = new Scene();
                 sc.BeginInit();
@@ -102,6 +103,16 @@ namespace GlobeTradeGIS
                 sc.LoadSxFile("data/tradescene.sxd");
                 nowmode = "home";
                 this.windowsUIButtonPanel.BringToFront();
+                sc.OnMouseUp += new ISceneControlEvents_Ax_OnMouseUpEventHandler(sc_OnMouseUp);
+            }
+            else if(e.Button.Properties.GroupIndex == 3)
+            {
+                //countryChart.Dispose();
+                //dockContainer.Dispose();
+               // dockClear();
+               // countryChart = new ChartControl();
+               // dockContainer = new ControlContainer();
+               // nowmode = "country";
             }
 
         }
@@ -318,14 +329,80 @@ namespace GlobeTradeGIS
                     }
                 }
             }
-            if(nowmode == "glode")
+            if(nowmode == "globe")
             {
                 IMap pMap = axMapControl.Map;
                 IActiveView pActiveView = pMap as IActiveView;
-                IFeatureLayer pFeatureLayer_event = GetLayerByName(axMapControl, "Event") as IFeatureLayer;
+                IFeatureLayer pFeatureLayer_event = GetLayerByName(axMapControl, "Eventbuffer") as IFeatureLayer;
+                IFeatureLayer pFeatureLayer_country = GetLayerByName(axMapControl, "Trade") as IFeatureLayer;
                 IFeatureClass pFeatureClass_event = pFeatureLayer_event.FeatureClass;
-                //IPoint point = pActiveView.ScreenDisplay.DisplayTransformation.ToMapPoint(e.x, e.y);
-                //IFeature feature = GetFeatureOnMouseDown(point, "Trade", axMapControl);
+                IPoint point = pActiveView.ScreenDisplay.DisplayTransformation.ToMapPoint(e.x, e.y);
+                IFeature feature = GetFeatureOnMouseDown(point, "Eventbuffer", axMapControl);
+                if (feature == null)
+                {
+                    panelControl.Visible = false;
+                    return;
+                }
+                if(feature.Value[0].ToString()=="4")
+                {
+                    string sql1 = "\"Country_Co\" LIKE \'USA\'";
+                    string sql2 = "\"Country_Co\" LIKE \'CHN\'";
+                    string sql3 = "\"Country_Co\" LIKE \'BGR\'";
+                    string sql4 = "\"Country_Co\" LIKE \'CHE\'";
+                    string sql5 = "\"Country_Co\" LIKE \'CZE\'";
+                    string sql6 = "\"Country_Co\" LIKE \'DEU\'";
+                    string sql7 = "\"Country_Co\" LIKE \'ESP\'";
+                    string sql8 = "\"Country_Co\" LIKE \'FRA\'";
+                    string sql9 = "\"Country_Co\" LIKE \'GBR\'";
+                    string sql10 = "\"Country_Co\" LIKE \'GRC\'";
+                    string sql11 = "\"Country_Co\" LIKE \'HRV\'";
+                    string sql12 = "\"Country_Co\" LIKE \'LUX\'";
+                    string sql13 = "\"Country_Co\" LIKE \'NLD\'";
+                    string sql14 = "\"Country_Co\" LIKE \'POL\'";
+                    string sql15 = "\"Country_Co\" LIKE \'ROU\'";
+                    string sql16 = "\"Country_Co\" LIKE \'SVK\'";
+                    string sql17 = "\"Country_Co\" LIKE \'SVN\'";
+
+                    IFeature f1 = QueryAndHight(sql1, pFeatureLayer_country,axMapControl);
+                    IFeature f2 = QueryAndHight(sql2, pFeatureLayer_country, axMapControl);
+                    IFeature f3 = QueryAndHight(sql3, pFeatureLayer_country, axMapControl);
+                    IFeature f4 = QueryAndHight(sql4, pFeatureLayer_country, axMapControl);
+                    IFeature f5 = QueryAndHight(sql5, pFeatureLayer_country, axMapControl);
+                    IFeature f6 = QueryAndHight(sql6, pFeatureLayer_country, axMapControl);
+                    IFeature f7 = QueryAndHight(sql7, pFeatureLayer_country, axMapControl);
+                    IFeature f8 = QueryAndHight(sql8, pFeatureLayer_country, axMapControl);
+                    IFeature f9 = QueryAndHight(sql9, pFeatureLayer_country, axMapControl);
+                    IFeature f10 = QueryAndHight(sql10, pFeatureLayer_country, axMapControl);
+                    IFeature f11 = QueryAndHight(sql11, pFeatureLayer_country, axMapControl);
+                    IFeature f12 = QueryAndHight(sql12, pFeatureLayer_country, axMapControl);
+                    IFeature f13 = QueryAndHight(sql13, pFeatureLayer_country, axMapControl);
+                    IFeature f14 = QueryAndHight(sql14, pFeatureLayer_country, axMapControl);
+                    IFeature f15 = QueryAndHight(sql15, pFeatureLayer_country, axMapControl);
+                    IFeature f16 = QueryAndHight(sql16, pFeatureLayer_country, axMapControl);
+                    IFeature f17 = QueryAndHight(sql17, pFeatureLayer_country, axMapControl);
+
+                    pMap.SelectFeature(pFeatureLayer_country, f1);
+                    pMap.SelectFeature(pFeatureLayer_country, f2);
+                    pMap.SelectFeature(pFeatureLayer_country, f3);
+                    pMap.SelectFeature(pFeatureLayer_country, f4);
+                    pMap.SelectFeature(pFeatureLayer_country, f5);
+                    pMap.SelectFeature(pFeatureLayer_country, f6);
+                    pMap.SelectFeature(pFeatureLayer_country, f7);
+                    pMap.SelectFeature(pFeatureLayer_country, f8);
+                    pMap.SelectFeature(pFeatureLayer_country, f9);
+                    pMap.SelectFeature(pFeatureLayer_country, f10);
+                    pMap.SelectFeature(pFeatureLayer_country, f11);
+                    pMap.SelectFeature(pFeatureLayer_country, f12);
+                    pMap.SelectFeature(pFeatureLayer_country, f13);
+                    pMap.SelectFeature(pFeatureLayer_country, f14);
+                    pMap.SelectFeature(pFeatureLayer_country, f15);
+                    pMap.SelectFeature(pFeatureLayer_country, f16);
+                    pMap.SelectFeature(pFeatureLayer_country, f17);
+
+                    axMapControl.Refresh(esriViewDrawPhase.esriViewGeoSelection, null, null); //选中要素高亮显示
+                    panelControl.Location = new System.Drawing.Point(e.x,e.y);
+                    panelControl.Visible = true;
+                }
                 //pMap.SelectFeature(pFeatureLayer_event, feature);
                 //axMapControl1.Map.SelectByShape(point, null, true);//第三个参数为是否只选中一个
                 //axMapControl.Refresh(esriViewDrawPhase.esriViewGeoSelection, null, null); //选中要素高亮显示

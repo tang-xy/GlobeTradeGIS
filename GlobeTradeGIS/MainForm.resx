@@ -1161,7 +1161,7 @@
     <value>5</value>
   </data>
   <data name="panelControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 68</value>
+    <value>55, 89</value>
   </data>
   <data name="panelControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1171,6 +1171,9 @@
   </data>
   <data name="panelControl.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
+  </data>
+  <data name="panelControl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;panelControl.Name" xml:space="preserve">
     <value>panelControl</value>
@@ -1194,7 +1197,7 @@
     <value />
   </data>
   <data name="progressPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>605, 272</value>
+    <value>534, 270</value>
   </data>
   <data name="progressPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
