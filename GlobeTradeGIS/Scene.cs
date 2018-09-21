@@ -7,7 +7,7 @@ using ESRI.ArcGIS.Controls;
 
 namespace GlobeTradeGIS
 {
-    class Scene : AxSceneControl
+    public class Scene : AxSceneControl
     {
         private System.Windows.Forms.Timer timer1;
         private System.ComponentModel.IContainer components = null;
@@ -28,5 +28,11 @@ namespace GlobeTradeGIS
         {
             this.Show3D();
         }
+        public void Dispose1()
+        {
+            this.timer1.Stop();
+            this.Dispose();
+        }
     }
+
 }

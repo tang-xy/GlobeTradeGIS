@@ -21,7 +21,6 @@ namespace GlobeTradeGIS
         ControlContainer dockContainer;
         string[] importtype;
         string[] importname;
-        string nowmode;
         public FormMap()
         {
             InitializeComponent();
