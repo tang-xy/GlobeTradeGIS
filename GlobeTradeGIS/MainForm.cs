@@ -313,6 +313,7 @@ namespace GlobeTradeGIS
                 if(feature != null)
                 {
                     nowmode = "country";
+                    panelControl.Visible = false;
                     axMapControl.CenterAt((feature.Shape as ESRI.ArcGIS.Geometry.IPolygon).ToPoint);
                     for (int i = 0; i < feature.Fields.FieldCount; i++)
                     {
@@ -406,6 +407,11 @@ namespace GlobeTradeGIS
                 //pMap.SelectFeature(pFeatureLayer_event, feature);
                 //axMapControl1.Map.SelectByShape(point, null, true);//第三个参数为是否只选中一个
                 //axMapControl.Refresh(esriViewDrawPhase.esriViewGeoSelection, null, null); //选中要素高亮显示
+            }
+            else if(nowmode!="globe")
+            {
+                panelControl.Visible = false;
+                return;
             }
 
         }
