@@ -150,13 +150,22 @@ namespace GlobeTradeGIS
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+        }
+        public void returnToGlobe()
+        {
             countryChart.Dispose();
             dockContainer.Dispose();
             dockClear();
             countryChart = new ChartControl();
             dockContainer = new ControlContainer();
+            nowmode = "globe";
         }
-
+        public void returnToCountry()
+        {
+            showChart(countryChart, "country", countryChart.Name);
+            nowmode = "country";
+        }
         private void dockContainer_Resize(object sender, EventArgs e)
         {
             countryChart.Size = dockContainer.Size;
