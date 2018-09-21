@@ -19,9 +19,9 @@ namespace GlobeTradeGIS
     {
         ChartControl countryChart;
         ControlContainer dockContainer;
+        Scene sc;
         string[] importtype;
         string[] importname;
-        string nowmode;
         public FormMap()
         {
             InitializeComponent();
@@ -30,7 +30,6 @@ namespace GlobeTradeGIS
             importtype = new string[] { "food", "goods", "fuel", "service", "merchandise", "commercial service" };
             importname = new string[] { "food_import", "goods_import", "fuel_import", "service_import", "merchandise_import", "commercial_service_import" };
             dockContainer.Resize += new System.EventHandler(this.dockContainer_Resize);
-            
             nowmode = "home";
         }
 

@@ -17,7 +17,7 @@ namespace GlobeTradeGIS
         public DockPanel dockpanel;
         public Label labelloading;
         public static MainForm instance;
-        string nowmode;
+        public string nowmode;
 
         public MainForm()
         {
