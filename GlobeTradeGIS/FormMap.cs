@@ -31,6 +31,7 @@ namespace GlobeTradeGIS
             importname = new string[] { "food_import", "goods_import", "fuel_import", "service_import", "merchandise_import", "commercial_service_import" };
             dockContainer.Resize += new System.EventHandler(this.dockContainer_Resize);
             nowmode = "home";
+            zoomToGlobe();
         }
 
         private void SqltoSeries(Series series1, string name,string sql)
@@ -152,8 +153,9 @@ namespace GlobeTradeGIS
         {
 
         }
-        public void returnToGlobe()
+        public override void returnToGlobe()
         {
+            zoomToGlobe();
             countryChart.Dispose();
             dockContainer.Dispose();
             dockClear();
@@ -161,10 +163,13 @@ namespace GlobeTradeGIS
             dockContainer = new ControlContainer();
             nowmode = "globe";
         }
-        public void returnToCountry()
+        public override void returnToCountry()
         {
-            showChart(countryChart, "country", countryChart.Name);
-            nowmode = "country";
+            if(nowmode == "timepoint")
+            {
+                showChart(countryChart, "country", countryChart.Name);
+                nowmode = "country";
+            }
         }
         private void dockContainer_Resize(object sender, EventArgs e)
         {
