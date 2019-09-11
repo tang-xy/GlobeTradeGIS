@@ -66,7 +66,7 @@ namespace GlobeTradeGIS
             this.windowsUIButtonPanel.Size = new System.Drawing.Size(this.ClientSize.Width, this.windowsUIButtonPanel.Height);
             //创建浮动窗口
             //dock();
-
+            axMapControl.BackColor = Color.FromArgb(0, 34, 54);
             sc = new Scene();
             sc.BeginInit();
             this.Controls.Add(sc);
@@ -77,7 +77,11 @@ namespace GlobeTradeGIS
             sc.LoadSxFile("data/tradescene.sxd");
             this.windowsUIButtonPanel.BringToFront();
         }
-
+        public void zoomToGlobe()
+        {
+            axMapControl.Extent = axMapControl.FullExtent;
+            axMapControl.Map.MapScale = 80000000;
+        }
         private void sc_OnMouseUp(object sender, ISceneControlEvents_OnMouseUpEvent e)
         {
             nowmode = "globe";
@@ -107,16 +111,24 @@ namespace GlobeTradeGIS
             }
             else if(e.Button.Properties.GroupIndex == 3)
             {
-                //countryChart.Dispose();
-                //dockContainer.Dispose();
-               // dockClear();
-               // countryChart = new ChartControl();
-               // dockContainer = new ControlContainer();
-               // nowmode = "country";
+                returnToCountry();
             }
+            else if (e.Button.Properties.GroupIndex == 4)
+            {
+                ClearSelect(axMapControl);
+                returnToGlobe();
+            }
+        }
+
+        virtual public void returnToCountry()
+        {
 
         }
 
+        virtual public void returnToGlobe()
+        {
+
+        }
         //
         //实现操作条进入退出动画
         //
@@ -313,6 +325,7 @@ namespace GlobeTradeGIS
                 if(feature != null)
                 {
                     nowmode = "country";
+                    panelControl.Visible = false;
                     axMapControl.CenterAt((feature.Shape as ESRI.ArcGIS.Geometry.IPolygon).ToPoint);
                     for (int i = 0; i < feature.Fields.FieldCount; i++)
                     {
@@ -320,6 +333,7 @@ namespace GlobeTradeGIS
                         {
                             progressPanel.Location = new System.Drawing.Point(this .ClientSize.Width/2-this.progressPanel.Width/2,this.ClientSize.Height/2-this.progressPanel.Height/2);
                             progressPanel.Visible = true;
+                            axMapControl.Extent = feature.Extent;
                             this.Enabled = false;
                             ToCountry(feature.Value[i].ToString());
                             progressPanel.Visible = false;
@@ -406,6 +420,11 @@ namespace GlobeTradeGIS
                 //pMap.SelectFeature(pFeatureLayer_event, feature);
                 //axMapControl1.Map.SelectByShape(point, null, true);//第三个参数为是否只选中一个
                 //axMapControl.Refresh(esriViewDrawPhase.esriViewGeoSelection, null, null); //选中要素高亮显示
+            }
+            else if(nowmode!="globe")
+            {
+                panelControl.Visible = false;
+                return;
             }
 
         }
